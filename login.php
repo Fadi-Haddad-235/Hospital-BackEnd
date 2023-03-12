@@ -23,10 +23,6 @@ if ($num_rows == 0) {
     $response['response'] = "user not found";
 } else {
     if (password_verify($password, $hashed_password)) {
-        // $response['response'] = "logged in";
-        // $response['user_id'] = $id;
-        // $response['username'] = $username;
-        // $response['usertype'] = $usertype;
         $payload = array(
             "user_id" => $id,
             "username" => $username,

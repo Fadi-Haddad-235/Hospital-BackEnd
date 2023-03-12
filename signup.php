@@ -37,15 +37,6 @@ if ($username_exists > 0) {
     // $response['category'] = $category;
 }
 
-// $query2=$mysqli->prepare('select id from users where email=?')
-// $query2->bind_param('s', $email);
-// $query2->execute();
-// $query2->store_result();
-// $query2->bind_result($id);
-// $query2->fetch();
-// $response2 = [];
-// $response2['user_id'] = $id;
-// echo json_encode("res2 is ". $response2);
 
 echo json_encode($response);
 ?>
