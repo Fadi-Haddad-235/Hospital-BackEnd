@@ -8,11 +8,5 @@ $hospitalId = $_POST['hospitalId'];
   $query->bind_param('ii', $hospitalId,$patientId );
   $result = $query->execute();
 
-  if ($result) {
-    echo json_encode(['message' => 'Patient assigned to hospital']);
-  } 
-  else {
-    http_response_code(500);
-    echo json_encode(['message' => 'Failed to assign patient to hospital']);
-  }
+
 ?>
